@@ -4,21 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>HBO Max - CLONE</title>
 </head>
 <body>
-    <nav>
-        <a href="#home">
-            <img src="./assets/images/hbo-logo.svg" alt="HBO Max Logo">
-        </a>
+    <nav class="menu">
+        <div class="menu__logo">
+            <a href="#home">
+                <img src="./assets/images/hbo-logo.svg" alt="HBO Max Logo">
+            </a>
+        </div>
         <ul>
-            <li><a href="#">Entrar</a></li>
+            <li>
+                <a class="menu__link" href="#">Entrar</a>
+            </li>
             <li>
                 <a href="#">
-                    <button class="btn">Assine agora</button>
+                    <button class="menu__btn">Assine agora</button>
                 </a>
             </li>
         </ul>
     </nav>
+    <header>
+        <div class="header__container">
+            <ul>
+                <li>
+                    <img src="./assets/images/hbo.png" alt="">
+                </li>
+                <li>
+                    <img src="./assets/images/dc.png" alt="">
+                </li>
+                <li>
+                    <img src="./assets/images/wb.png" alt="">
+                </li>
+                <li>
+                    <img src="./assets/images/cartoon-network_neutral.png" alt="">
+                </li>
+                <li>
+                    <img src="./assets/images/max_originals.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="header__container">
+            <p>
+                Curta as melhores histórias<br>
+                <strong>para todo mundo</strong>
+            </p>
+        </div>
+        <div class="divider"></div>
+    </header>
 </body>
 </html>
