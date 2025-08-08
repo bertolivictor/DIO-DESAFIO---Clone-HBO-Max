@@ -4,18 +4,20 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: #020228;
+    color: #ffffff;
 }
 
 .menu {
     background-color: rgb(0, 0, 0, 0.3);
-    color: #ffffff;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    letter-spacing: 2px;
     height: 7rem;
     width: 100vw;
     padding: 20px 10px;
+    gap: 20px;
 }
 .menu img {
     width: 160px;
@@ -23,6 +25,9 @@ body {
 }
 .menu__logo {
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .menu ul {
     display: flex;
@@ -42,9 +47,11 @@ body {
 .menu__btn {
     border: none;
     border-radius: 30px;
-    padding: 8px 10px;
+    padding: 6px 10px;
     width: 150px;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
     font-family: "Raleway", sans-serif;
     font-weight: bold;
     color: #ffffff;
@@ -55,33 +62,141 @@ header {
     flex-direction: column;
     align-items: center;
 }
-.header__container {
+.container {
     box-sizing: border-box;
-    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 5px;
     font-family: "Raleway", sans-serif;
     text-align: center;
     padding: 20px 10px;
+    margin-bottom: 20px;
 }
-.header__container ul {
+.container ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
-.header__container p {
+.header__text--small {
     font-size: 2rem;
     text-transform: uppercase;
     line-height: 45px;
     padding: 0 20px;
 }
-.header__container strong {
+.header__text--large {
     font-weight: bold;
     font-size: 3rem;
 }
 .divider {
     width: 55%;
     height: 5px;
-    background: linear-gradient(90deg, #5516ba, rgba(255, 0, 229, 0.5) 80%);;
-    
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #5516ba, rgba(255, 0, 229, 0.5) 80%);
+}
+.content__txt--small {
+    font-size: 1.25rem;
+    font-family: "Quicksand", sans-serif;
+}
+.content__txt--large {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.content__text--smaller {
+    font-size: 1rem;
+    font-weight: normal;
+}
+.content__btn--large {
+    background: linear-gradient(60deg, #9b34ef 5%, #490cb0 50%, transparent 105%);
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    width: 250px;
+    padding: 15px 20px;
+    margin: 30px auto;
+    letter-spacing: 3px;
+
+}
+.obs__text {
+    padding: 20px 0;
+    width: 70vw;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+    margin-bottom: 250px;
+}
+main {
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__text--large {
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.main__cards {
+    display: flex;
+    flex-direction: column;
+}
+.card__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, transparent, #3b1e63);
+    border-radius: 10px;
+    width: 230px;
+    padding: 50px;
+    margin-bottom: 20px;
+}
+.card__title {
+    margin-bottom: 25px;
+    text-align: center;
+}
+.card__txt--title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.card__txt--large {
+    color: #ff00e5;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.card__text--smaller {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.sub__description::marker {
+    content: "+";
+    font-size: 2em;
+    margin: 0 8px 0 0;
+
+}
+.sub__description {
+    padding:0 0 20px 15px;
+}
+.sub__btn {
+    background: linear-gradient(60deg, #9b34ef 5%, #490cb0 50%, transparent 105%);
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: .8rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    width: 250px;
+    padding: 15px 20px;
+    margin: 30px auto;
+    letter-spacing: 5px;
 }
