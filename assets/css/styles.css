@@ -1,33 +1,42 @@
 @import url("./reset.css");
 
+html {
+    width: 100%;
+}
 body {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    background-color: #020228;
+    max-width: 100%;
+    background-color: #cccccc;
     color: #ffffff;
+    box-sizing: border-box;
 }
 
 .menu {
     background-color: rgb(0, 0, 0, 0.3);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     letter-spacing: 2px;
-    height: 7rem;
-    width: 100vw;
+    height: 3rem;
+    width: 100%;
     padding: 20px 10px;
     gap: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 2;
+    
 }
-.menu img {
-    width: 160px;
-    object-fit: contain;
+.menu__logo img {
+    width: 100%;
+    object-fit: scale-down;
 }
 .menu__logo {
-    width: 50%;
+    width: 8%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 10px;
 }
 .menu ul {
     display: flex;
@@ -41,14 +50,14 @@ body {
     font-family: "Raleway", sans-serif;
     color: #ffffff;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 12px;
     text-transform: uppercase;
 }
 .menu__btn {
     border: none;
     border-radius: 30px;
-    padding: 6px 10px;
-    width: 150px;
+    padding: 8px 10px;
+    width: 170px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 12px;
@@ -57,10 +66,23 @@ body {
     color: #ffffff;
     background-color: #b535f6;
 }
-header {
+.header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    padding-top: 100px;
+    background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+    background-size: 400% 400%;
+    animation: gradient-background 10s  ease infinite alternate;
+}
+.header::after {
+  content: "";
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(0deg, #000000, transparent);
 }
 .container {
     box-sizing: border-box;
@@ -109,24 +131,26 @@ header {
     font-size: 1rem;
     font-weight: normal;
 }
-.content__btn--large {
+.btn {
     background: linear-gradient(60deg, #9b34ef 5%, #490cb0 50%, transparent 105%);
     color: #ffffff;
     font-family: "Raleway", sans-serif;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: .9rem;
     text-transform: uppercase;
     border: none;
     border-radius: 30px;
-    width: 250px;
+    width: 25vw;
     padding: 15px 20px;
     margin: 30px auto;
     letter-spacing: 3px;
-
+}
+.header__btn {
+      width: 12vw;
 }
 .obs__text {
     padding: 20px 0;
-    width: 70vw;
+    width: 15vw;
     font-family: "Quicksand", sans-serif;
     font-weight: 300;
     margin-bottom: 250px;
@@ -136,6 +160,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
 }
 .main__text--large {
     font-size: 2rem;
@@ -145,22 +172,29 @@ main {
 }
 .main__cards {
     display: flex;
-    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 150px;
 }
 .card__container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background: linear-gradient(0deg, transparent, #3b1e63);
     border-radius: 10px;
-    width: 230px;
+    width: 25vw;
     padding: 50px;
     margin-bottom: 20px;
 }
+.text__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 .card__title {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 25px;
-    text-align: center;
 }
 .card__txt--title {
     font-size: 1.5rem;
@@ -170,7 +204,7 @@ main {
 .card__txt--large {
     color: #ff00e5;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 .card__text--smaller {
     color: #ffffff;
@@ -184,19 +218,69 @@ main {
 
 }
 .sub__description {
+    font-size: 1.25rem;
     padding:0 0 20px 15px;
 }
-.sub__btn {
-    background: linear-gradient(60deg, #9b34ef 5%, #490cb0 50%, transparent 105%);
-    color: #ffffff;
+.main__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 100px auto;
+    width: 100%;
+}
+.content__container {
+    display: grid;
+    grid-template-columns: repeat(3, 353px);
+    grid-template-rows: repeat(2, 530px);
+    grid-auto-flow: column;
+    gap: 40px;
+}
+.content__card img {
+    box-sizing: border-box;
+    width: 353px;
+    text-align: center;
+}
+footer p {
+    text-align: center;
+    color: #9e86ff;
+    font-family: "Quicksand", sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+}
+.footer__nav {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.footer__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     font-family: "Raleway", sans-serif;
     font-weight: bold;
-    font-size: .8rem;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 30px;
-    width: 250px;
-    padding: 15px 20px;
-    margin: 30px auto;
-    letter-spacing: 5px;
+    color: #9e86ff;
+}
+.footer__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    gap: 40px;
+    margin: 60px auto 0px auto;
+}
+
+
+
+@keyframes gradient-background {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
