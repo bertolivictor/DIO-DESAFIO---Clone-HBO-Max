@@ -129,5 +129,4 @@ As fontes utilizadas no projeto foram:
 
 <h2 id="demo"> Demonstração</h2>
 
-Você pode acessar ao resultado final do projeto [clicando aqui]([https://bertolivictor.github.io/DIO-DESAFIO---Clone-HBO-Max/]).
-
+Você pode acessar ao resultado final do projeto <a href="https://bertolivictor.github.io/DIO-DESAFIO---Clone-HBO-Max/">Clicando aqui</a>
