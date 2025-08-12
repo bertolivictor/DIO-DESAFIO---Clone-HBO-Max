@@ -2,6 +2,7 @@
 
 html {
     width: 100%;
+    scroll-behavior: smooth;
 }
 body {
     width: 100%;
@@ -145,6 +146,7 @@ body {
     font-weight: bold;
     font-size: .8rem;
     text-transform: uppercase;
+    text-decoration: none;
     border: none;
     border-radius: 30px;
     width: 400px;
