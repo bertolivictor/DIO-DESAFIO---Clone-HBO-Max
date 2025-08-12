@@ -11,7 +11,6 @@ body {
     color: #ffffff;
     box-sizing: border-box;
 }
-
 .menu {
     background-color: rgb(0, 0, 0, 0.3);
     display: flex;
@@ -461,4 +460,16 @@ footer p {
     .card__container:nth-child(1) {
     transform: none;
   }
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b535f6;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff00e5;
 }
