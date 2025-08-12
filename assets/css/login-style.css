@@ -10,7 +10,7 @@ body {
     background-color: #020228;
     color: #ffffff;
     box-sizing: border-box;
-    background-image: url(/assets/images/background-movies-series.png);
+    background-image: url(../images/background-movies-series.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
