@@ -192,7 +192,7 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-image: url(/assets/images/background-movies-series.png);
+    background-image: url(../images/background-movies-series.png);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -303,32 +303,32 @@ main {
     transition: opacity 2s;
 }
 .content__card:nth-child(1):hover {
-  background-image: url("/assets/images/hbo-hover_0.png");
+  background-image: url("../images/hbo-hover_0.png");
   background-size: cover;
   background-position: center;
 }
 .content__card:nth-child(2):hover {
-  background-image: url("/assets/images/MAX-Hover.webp");
+  background-image: url("../images/MAX-Hover.webp");
   background-size: cover;
   background-position: center;
 }
 .content__card:nth-child(3):hover {
-  background-image: url("/assets/images/DC-Hover.webp");
+  background-image: url("../images/DC-Hover.webp");
   background-size: cover;
   background-position: center;
 }
 .content__card:nth-child(4):hover {
-  background-image: url("/assets/images/WB-Hover.webp");
+  background-image: url("../images/WB-Hover.webp");
   background-size: cover;
   background-position: center;
 }
 .content__card:nth-child(5):hover {
-  background-image: url("/assets/images/CN-Hover.png");
+  background-image: url("../images/CN-Hover.png");
   background-size: cover;
   background-position: center;
 }
 .content__card:nth-child(6):hover {
-  background-image: url("/assets/images/UCL-Hover.webp");
+  background-image: url("../images/UCL-Hover.webp");
   background-size: cover;
   background-position: center;
 }
